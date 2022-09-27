@@ -1,24 +1,22 @@
 {
   "name": "comp229as1",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node ./server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ryan345676/comp-229-as-001.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ryan345676/comp-229-as-001/issues"
-  },
-  "homepage": "https://github.com/ryan345676/comp-229-as-001#readme",
   "dependencies": {
-    "express": "^4.18.1",
-    "path": "^0.12.7"
+    "@fortawesome/fontawesome-free": "^6.2.0",
+    "bootstrap": "^5.2.1",
+    "bootstrap-icons": "^1.9.1",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "html-pdf": "^3.0.1",
+    "http-errors": "~1.6.3",
+    "jquery": "^3.6.1",
+    "morgan": "~1.9.1",
+    "popper.js": "^1.16.1"
   }
 }
