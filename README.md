@@ -1,3 +1,3 @@
-# comp-229-as-001
+# ALL CODE FOR ASSIGNMENT 1 IS IN master 
 
 https://youtu.be/z3QvgLHcvLY
