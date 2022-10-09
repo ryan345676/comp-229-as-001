@@ -11,6 +11,7 @@
 body{
   background: url('https://i.imgur.com/kk76J5I.jpg') top center;
   background-size: cover;
+  background-repeat: repeat;
   height: 100vh;
 }
 
