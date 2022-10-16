@@ -1,0 +1,49 @@
+<%- include partials/header.ejs%>
+<%- include partials/main_nav.ejs%>
+<div class="container bg-white">
+    <div class="row">
+        <div class="col-md-offset-1 col-md-10">
+            <h3>List of Bussiness Contacts: </h3>
+            <br>
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th class="text-center">Contact Name</th>
+                            <th class="text-center">Contact Number</th>
+                            <th class="text-center">Contact Email Address</th>
+                            <th class="text-center">Edit option</th>
+                            <th class="text-center">Delete Option</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% for (let count=0; count < list.length; count++) { %>
+                            <tr>
+                                <td>
+                                    <%= list[count].contactName %>
+                                </td>
+                                <td class="text-center">
+                                    <%= list[count].contactNumber %>
+                                </td>
+                                <td class="text-center">
+                                    <%= list[count].contactEmail %>
+                                </td>
+                                <td class="text-center">
+                                    <a href="/update/<%=list[count]._id %>"
+                                        class="btn btn-primary btn-sm">UPDATE</a>
+                                </td>
+                                <td class="text-center">
+                                    <a href="/delete/<%= list[count]._id %>"
+                                        class="btn btn-danger btn-sm">DELETE</a>
+                                </td>
+                            </tr>
+                            <% } %>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%- include partials/bottom_nav.ejs%>
+<%- include partials/footer.ejs%>

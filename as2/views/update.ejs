@@ -1,0 +1,34 @@
+<%- include partials/header.ejs%>
+<%- include partials/main_nav.ejs%>
+<div class="container-fluid bg-white" style=" margin: 0%; padding: 0%; ">
+  <div style="color: black">
+    <h1><%=title%></h1>
+  </div>
+
+  <p>&nbsp;</p>
+
+  <div class="row ">
+    <div class="col col-lg-4 ">
+      <form action="" method="post">
+        <div class="form-group">
+          <label for="name">Enter Name: </label>
+          <input type="text" class="form-control" name="contactName" id="name" placeholder="Enter Full name" value="<%= list.contactName %>">
+        </div>
+        <div class="form-group">
+          <label for="number">Enter Phone Number: </label>
+          <input type="text" class="form-control" name="contactNumber" id="number" placeholder="Enter Contact number" value="<%= list.contactNumber %>">
+        </div>
+        <div class="form-group">
+          <label for="email">Enter Email Address: </label>
+          <input type="email" class="form-control" name="contactEmailAddress" id="email" placeholder="Enter Email address" value="<%= list.contactEmail %>">
+        </div>
+        <p>&nbsp;</p>
+        <button type="Submit" class="btn btn-warning">UPDATE</button>
+        <a href="/businessContact" class="btn btn-secondary"><i class="fa fa-"></i> CANCEL</a>
+      </form>
+    </div>
+  </div>
+</div>
+</div>
+<%- include partials/bottom_nav.ejs%>
+<%- include partials/footer.ejs%>

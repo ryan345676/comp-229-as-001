@@ -1,0 +1,22 @@
+<%- include partials/header.ejs%>
+<%- include partials/main_nav.ejs%>
+
+<body>
+  <h1><%= title %></h1>
+  <form method="post" name="login">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="name" name="name" class="form-control" id="name" aria-describedby="nameHelp" placeholder="Enter name" value="" />
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" name="password" class="form-control" id="password" aria-describedby="emailHelp" placeholder="*********" value="" />
+    </div>
+    <button type="Submit" class="btn btn-success text-white">Login</button>
+  </form>
+  <p>&nbsp;</p>
+  <p>For New User, Click Here to</p>
+  <button class="btn btn-success text-white" onclick="location.href='/register'">Register</button>
+</body>
+<%- include partials/bottom_nav.ejs%>
+<%- include partials/footer.ejs%>
